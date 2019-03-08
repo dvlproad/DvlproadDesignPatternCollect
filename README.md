@@ -1,0 +1,2 @@
+# DvlproadDesignPatternCollect
+各种设计模式Design pattern(ViewModel等)的整理及比较
