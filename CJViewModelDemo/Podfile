@@ -27,15 +27,19 @@ post_install do |installer|
 end
 
 target 'CJViewModelDemo' do
-   pod 'CJBaseUtil',          :subspecs => ['CJDataUtil']
+  pod 'CJBaseUtil',          :subspecs => ['CJDataUtil']
 #   pod 'CJDemoCommon'
-   pod 'CJDemoService/User'#,  :path => '~/Project/Gitee/AppServiceCollect’
-   pod 'CJDemoModuleLogin/Logic/NDM'#, :path => '~/Project/Gitee/AppLoginCollect’
+  pod 'CQThemeBaseUIKit'
+  pod 'CQOverlayKit'
+  pod 'CJBaseUIKit', :subspecs => ['UIColor', 'UINavigationBar']
+  pod 'CQDemoKit',            '~> 0.4.0', :subspecs => ['Home_Base']
+  pod 'CJDemoService/User'
+  pod 'CJDemoModuleLogin/Logic/NDM'
    
-   pod 'ReactiveObjC', '~> 3.1.0'
-   pod 'KVOController', '~> 1.2.0'
+  pod 'ReactiveObjC', '~> 3.1.0'
+  pod 'KVOController', '~> 1.2.0'
 
-   pod 'IQKeyboardManager'
+  pod 'IQKeyboardManager'
 end
 
 target 'CJViewModelDemoTests' do

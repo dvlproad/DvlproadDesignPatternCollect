@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -34,8 +34,6 @@
 		788A55F021AF8CB40011F993 /* RACBindTvTextFieldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 788A55EF21AF8CB40011F993 /* RACBindTvTextFieldViewController.m */; };
 		788A55F321AF8D020011F993 /* RACTextFieldBindViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 788A55F221AF8D020011F993 /* RACTextFieldBindViewModel.m */; };
 		788A55F621AF90F20011F993 /* BindTextFieldHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 788A55F521AF90F20011F993 /* BindTextFieldHomeViewController.m */; };
-		7894998022325C0A0084ECEF /* CJUIKitBaseHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7894997D22325C0A0084ECEF /* CJUIKitBaseHomeViewController.m */; };
-		7894998122325C0A0084ECEF /* CJUIKitBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7894997F22325C0A0084ECEF /* CJUIKitBaseViewController.m */; };
 		7894998522325C6A0084ECEF /* NSString+STDemoValidate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7894998422325C6A0084ECEF /* NSString+STDemoValidate.m */; };
 		7894998722325EF80084ECEF /* LoginAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7894998622325EF70084ECEF /* LoginAssets.xcassets */; };
 		78AB836721B4FFFF00853E21 /* HighRACLoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 78AB836521B4FFFE00853E21 /* HighRACLoginViewModel.m */; };
@@ -135,10 +133,6 @@
 		788A55F221AF8D020011F993 /* RACTextFieldBindViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACTextFieldBindViewModel.m; sourceTree = "<group>"; };
 		788A55F421AF90F20011F993 /* BindTextFieldHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BindTextFieldHomeViewController.h; sourceTree = "<group>"; };
 		788A55F521AF90F20011F993 /* BindTextFieldHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BindTextFieldHomeViewController.m; sourceTree = "<group>"; };
-		7894997C22325C0A0084ECEF /* CJUIKitBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJUIKitBaseViewController.h; sourceTree = "<group>"; };
-		7894997D22325C0A0084ECEF /* CJUIKitBaseHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJUIKitBaseHomeViewController.m; sourceTree = "<group>"; };
-		7894997E22325C0A0084ECEF /* CJUIKitBaseHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJUIKitBaseHomeViewController.h; sourceTree = "<group>"; };
-		7894997F22325C0A0084ECEF /* CJUIKitBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJUIKitBaseViewController.m; sourceTree = "<group>"; };
 		7894998322325C6A0084ECEF /* NSString+STDemoValidate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+STDemoValidate.h"; sourceTree = "<group>"; };
 		7894998422325C6A0084ECEF /* NSString+STDemoValidate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+STDemoValidate.m"; sourceTree = "<group>"; };
 		7894998622325EF70084ECEF /* LoginAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = LoginAssets.xcassets; sourceTree = "<group>"; };
@@ -244,7 +238,6 @@
 				786826FF21AE78D400FCCDE5 /* AppDelegate+WindowRootViewController.h */,
 				7868270021AE78D400FCCDE5 /* AppDelegate+WindowRootViewController.m */,
 				7894998222325C6A0084ECEF /* Utils */,
-				7894997B22325C0A0084ECEF /* CJUIKitBase */,
 				7868270221AE78EE00FCCDE5 /* Module */,
 				7868269221AE74A100FCCDE5 /* ViewController.h */,
 				7868269321AE74A100FCCDE5 /* ViewController.m */,
@@ -415,17 +408,6 @@
 			path = "BindTextFieldDemo(文本框绑定)";
 			sourceTree = "<group>";
 		};
-		7894997B22325C0A0084ECEF /* CJUIKitBase */ = {
-			isa = PBXGroup;
-			children = (
-				7894997C22325C0A0084ECEF /* CJUIKitBaseViewController.h */,
-				7894997D22325C0A0084ECEF /* CJUIKitBaseHomeViewController.m */,
-				7894997E22325C0A0084ECEF /* CJUIKitBaseHomeViewController.h */,
-				7894997F22325C0A0084ECEF /* CJUIKitBaseViewController.m */,
-			);
-			path = CJUIKitBase;
-			sourceTree = "<group>";
-		};
 		7894998222325C6A0084ECEF /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -513,7 +495,7 @@
 				7868268821AE74A100FCCDE5 /* Sources */,
 				7868268921AE74A100FCCDE5 /* Frameworks */,
 				7868268A21AE74A100FCCDE5 /* Resources */,
-				61D983AF6C247E8A8A138892 /* [CP] Copy Pods Resources */,
+				931051D99DEAEE85C97655FB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -650,48 +632,17 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		61D983AF6C247E8A8A138892 /* [CP] Copy Pods Resources */ = {
+		931051D99DEAEE85C97655FB /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CJViewModelDemo/Pods-CJViewModelDemo-resources.sh",
-				"${PODS_ROOT}/CJBaseEffectKit/CJBaseEffectKit/CJMJRefreshComponent/Resources/cjRefreshArrowDown@2x.png",
-				"${PODS_ROOT}/CJBaseUIKit/CJBaseUIKit/CJToast/Resources/CJToast_error.png",
-				"${PODS_ROOT}/CJBaseUIKit/CJBaseUIKit/CJToast/Resources/CJToast_error@2x.png",
-				"${PODS_ROOT}/CJBaseUIKit/CJBaseUIKit/CJToast/Resources/CJToast_error@3x.png",
-				"${PODS_ROOT}/CJBaseUIKit/CJBaseUIKit/CJToast/Resources/CJToast_success.png",
-				"${PODS_ROOT}/CJBaseUIKit/CJBaseUIKit/CJToast/Resources/CJToast_success@2x.png",
-				"${PODS_ROOT}/CJBaseUIKit/CJBaseUIKit/CJToast/Resources/CJToast_success@3x.png",
-				"${PODS_ROOT}/CJFile/CJFile/CJFMDBFileManager/demofmdb.db",
-				"${PODS_ROOT}/CJPicker/CJPicker/Resources/area.plist",
-				"${PODS_ROOT}/CJPicker/CJPicker/Resources/city.plist",
-				"${PODS_ROOT}/CJPicker/CJPicker/Resources/line_gray_pickerToolbar.png",
-				"${PODS_ROOT}/CJPicker/CJPicker/Resources/line_gray_pickerToolbar@2x.png",
-				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
-				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
-				"${PODS_ROOT}/SAMKeychain/Support/SAMKeychain.bundle",
-				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CJViewModelDemo/Pods-CJViewModelDemo-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/cjRefreshArrowDown@2x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CJToast_error.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CJToast_error@2x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CJToast_error@3x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CJToast_success.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CJToast_success@2x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CJToast_success@3x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/demofmdb.db",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/area.plist",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/city.plist",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/line_gray_pickerToolbar.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/line_gray_pickerToolbar@2x.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SAMKeychain.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CJViewModelDemo/Pods-CJViewModelDemo-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -753,7 +704,6 @@
 				7868269F21AE74A300FCCDE5 /* main.m in Sources */,
 				78AB83A021B68E9C00853E21 /* RACListenArrayViewController.m in Sources */,
 				7868270121AE78D400FCCDE5 /* AppDelegate+WindowRootViewController.m in Sources */,
-				7894998022325C0A0084ECEF /* CJUIKitBaseHomeViewController.m in Sources */,
 				78AB839621B6614D00853E21 /* ListenSelectedObserveViewModel.m in Sources */,
 				7819F25E21B28F540072E8A6 /* RACBindTextFieldViewController.m in Sources */,
 				78AB83A321B76B0900853E21 /* ListenArrayViewModel.m in Sources */,
@@ -761,7 +711,6 @@
 				78AB837721B61B7900853E21 /* BindPropertyHomeViewController.m in Sources */,
 				7842EE1521B22B6800DEE9B3 /* RACTextFieldBindTableViewCell.m in Sources */,
 				7868275721AE80CF00FCCDE5 /* NormalBlockLoginViewController.m in Sources */,
-				7894998122325C0A0084ECEF /* CJUIKitBaseViewController.m in Sources */,
 				7868276F21AE9DF400FCCDE5 /* LVLoginViewController.m in Sources */,
 				7868271321AE7BD900FCCDE5 /* DelegateLoginViewModel.m in Sources */,
 				7894998522325C6A0084ECEF /* NSString+STDemoValidate.m in Sources */,

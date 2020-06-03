@@ -84,13 +84,13 @@
 
 /// "尝试登录失败(未满足条件)时候"，更新视图
 - (void)vm_tryLoginFailureWithMessage:(NSString *)message {
-    [CJToast shortShowMessage:message];
+    [CQToastUtil showMessage:message];
 }
 
 /// 开始登录时候更新视图显示提示信息
 - (void)vm_startLoginWithMessage:(NSString *)message {
     if (self.loginStateHUD == nil) {
-        self.loginStateHUD = [CJToast createChrysanthemumHUDWithMessage:message toView:nil];
+//        self.loginStateHUD = [CJToast createChrysanthemumHUDWithMessage:message toView:nil];
     } else {
         self.loginStateHUD.label.text = message;
     }
@@ -107,7 +107,7 @@
 /// 登录成功需要进入/回到主页
 - (void)vm_loginSuccessWithMessage:(NSString *)message {
     [self.loginStateHUD hideAnimated:YES afterDelay:0];
-    [CJToast shortShowMessage:message];
+    [CQToastUtil showMessage:message];
 }
 
 - (void)didReceiveMemoryWarning {

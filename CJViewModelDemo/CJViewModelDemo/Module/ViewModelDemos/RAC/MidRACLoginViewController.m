@@ -52,19 +52,19 @@
     
     [viewModel.tryFailureObject subscribeNext:^(id  _Nullable x) {
         NSString *message = (NSString *)x;
-        [CJToast shortShowMessage:message];
+        [CQToastUtil showMessage:message];
     }];
     [viewModel.startObject subscribeNext:^(id  _Nullable x) {
         NSString *message = (NSString *)x;
-        [CJToast shortShowMessage:message];
+        [CQToastUtil showMessage:message];
     }];
     [viewModel.successObject subscribeNext:^(id  _Nullable x) {
         NSString *message = (NSString *)x;
-        [CJToast shortShowMessage:message];
+        [CQToastUtil showMessage:message];
     }];
     [viewModel.failureObject subscribeNext:^(id  _Nullable x) {
         NSString *message = (NSString *)x;
-        [CJToast shortShowMessage:message];
+        [CQToastUtil showMessage:message];
     }];
     
     self.viewModel = viewModel;

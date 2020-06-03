@@ -130,7 +130,7 @@
     }];
     self.codeResultLabel = codeResultLabel;
     
-    CJTextField *textField = [DemoTextFieldFactory textFieldWithLeftLabelText:@"文本框:"];
+    CJTextField *textField = [CQTextFieldFactory textFieldWithLeftLabelText:@"文本框:"];
     textField.placeholder = @"请输入文本";
     textField.backgroundColor = CJColorFromHexString(@"#f2f2f2");
     [parentView addSubview:textField];
@@ -142,7 +142,7 @@
     }];
     self.textField = textField;
     
-    UIButton *changeTextFieldTextButton = [DemoButtonFactory blueButton];
+    UIButton *changeTextFieldTextButton = [CQButtonFactory themeBGButton];
     [changeTextFieldTextButton setTitle:@"点击以执行使用代码修改文本框的操作" forState:UIControlStateNormal];
     [changeTextFieldTextButton addTarget:self action:@selector(changeTextFieldText) forControlEvents:UIControlEventTouchUpInside];
     [parentView addSubview:changeTextFieldTextButton];
@@ -154,7 +154,7 @@
     }];
     self.changeTextFieldTextButton = changeTextFieldTextButton;
     
-    UIButton *changeViewModelTextButton = [DemoButtonFactory blueButton];
+    UIButton *changeViewModelTextButton = [CQButtonFactory themeBGButton];
     [changeViewModelTextButton setTitle:@"改变ViewModel的文本" forState:UIControlStateNormal];
     [changeViewModelTextButton addTarget:self action:@selector(changeViewModelText) forControlEvents:UIControlEventTouchUpInside];
     [parentView addSubview:changeViewModelTextButton];
@@ -168,12 +168,12 @@
     
     
     // 开始监听文本 + 停止监听文本
-    UIButton *startListenTextButton = [DemoButtonFactory blueButton];
+    UIButton *startListenTextButton = [CQButtonFactory themeBGButton];
     [startListenTextButton setTitle:@"开始监听文本" forState:UIControlStateNormal];
     [startListenTextButton addTarget:self action:@selector(startListen) forControlEvents:UIControlEventTouchUpInside];
     [parentView addSubview:startListenTextButton];
     
-    UIButton *stopListenTextButton = [DemoButtonFactory blueButton];
+    UIButton *stopListenTextButton = [CQButtonFactory themeBGButton];
     [stopListenTextButton setTitle:@"停止监听文本" forState:UIControlStateNormal];
     [stopListenTextButton addTarget:self action:@selector(stopListen) forControlEvents:UIControlEventTouchUpInside];
     [parentView addSubview:stopListenTextButton];

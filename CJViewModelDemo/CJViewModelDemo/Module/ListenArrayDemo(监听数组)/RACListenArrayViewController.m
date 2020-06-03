@@ -8,6 +8,7 @@
 
 #import "RACListenArrayViewController.h"
 #import <ReactiveObjC/ReactiveObjC.h>
+#import <CQDemoKit/CJUIKitToastUtil.h>
 
 @interface RACListenArrayViewController () {
     
@@ -93,7 +94,7 @@
                     NSInteger lastIndex = self.okArray.count - 1;
                     [kvo_okArray replaceObjectAtIndex:lastIndex withObject:string];
                 } else {
-                    //[CJToast shortShowMessage:@"没有数据可以更改了"];
+                    //[CJUIKitToastUtil showMessage:@"没有数据可以更改了"];
                 }
             };
             [sectionDataModel.values addObject:bindModule];
@@ -106,7 +107,7 @@
         self.racTestArray = [[NSMutableArray alloc] init];
 
         RACSignal *arraySignal = [[RACObserve(self, racTestArray) merge:self.racTestArray.rac_sequence.signal] map:^id _Nullable(id  _Nullable value) {
-            [CJToast shortShowMessage:@"racTestArray数据更新"];
+            [CJUIKitToastUtil showMessage:@"racTestArray数据更新"];
             NSLog(@"self.racTestArray = %@", self.racTestArray);
             
             return @(self.racTestArray.count > 0);
@@ -157,11 +158,11 @@
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
     if ([keyPath isEqualToString:@"okArray"]) {
-        [CJToast shortShowMessage:@"okArray数据更新"];
+        [CJUIKitToastUtil showMessage:@"okArray数据更新"];
         NSLog(@"self.okArray = %@", self.okArray);
         
     } else if ([keyPath isEqualToString:@"flawArray"]) {
-        [CJToast shortShowMessage:@"flawArray数据更新"];
+        [CJUIKitToastUtil showMessage:@"flawArray数据更新"];
         NSLog(@"self.flawArray = %@", self.flawArray);
     }
 }

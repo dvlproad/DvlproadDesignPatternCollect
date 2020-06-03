@@ -90,7 +90,7 @@
     
     UIImage *normalImage = [UIImage imageNamed:@"login_username_gray"];
     UIImage *selectedImage = [UIImage imageNamed:@"login_username_blue"];
-    CJTextField *textField = [DemoTextFieldFactory textFieldWithNormalImage:normalImage selectedImage:selectedImage];
+    CJTextField *textField = [CQTextFieldFactory textFieldWithNormalImage:normalImage selectedImage:selectedImage];
     textField.placeholder = NSLocalizedString(@"用户名", nil);
     textField.returnKeyType = UIReturnKeyNext;
     textField.clearButtonMode = UITextFieldViewModeWhileEditing;

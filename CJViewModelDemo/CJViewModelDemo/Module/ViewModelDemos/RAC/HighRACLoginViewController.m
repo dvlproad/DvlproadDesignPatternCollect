@@ -7,6 +7,7 @@
 //
 
 #import "HighRACLoginViewController.h"
+#import <CQDemoKit/CJUIKitToastUtil.h>
 #import "HighRACLoginViewModel.h"
 //#import "CTMediator+STDemoLogin.h"
 
@@ -50,19 +51,19 @@
     
     [viewModel.tryFailureObject subscribeNext:^(id  _Nullable x) {
         NSString *message = (NSString *)x;
-        [CJToast shortShowMessage:message];
+        [CJUIKitToastUtil showMessage:message];
     }];
     [viewModel.startObject subscribeNext:^(id  _Nullable x) {
         NSString *message = (NSString *)x;
-        [CJToast shortShowMessage:message];
+        [CJUIKitToastUtil showMessage:message];
     }];
     [viewModel.successObject subscribeNext:^(id  _Nullable x) {
         NSString *message = (NSString *)x;
-        [CJToast shortShowMessage:message];
+        [CJUIKitToastUtil showMessage:message];
     }];
     [viewModel.failureObject subscribeNext:^(id  _Nullable x) {
         NSString *message = (NSString *)x;
-        [CJToast shortShowMessage:message];
+        [CJUIKitToastUtil showMessage:message];
     }];
     
     self.viewModel = viewModel;

@@ -125,7 +125,7 @@
     
 //    [self.viewModel loginWithTryFailure:^(NSString *tryFailureMessage) {
 //        //"尝试登录失败(未满足条件)时候"，更新视图
-//        [CJToast shortShowMessage:tryFailureMessage];
+//        [CJUIKitToastUtil showMessage:tryFailureMessage];
 //        
 //    } loginStart:^(NSString *startMessage) {
 //        //开始登录时候更新视图显示提示信息
@@ -138,7 +138,7 @@
 //    } loginSuccess:^(NSString *successMessage) {
 //        //登录成功需要进入/回到主页
 //        [self.loginStateHUD hideAnimated:YES afterDelay:0];
-//        [CJToast shortShowMessage:successMessage];
+//        [CJUIKitToastUtil showMessage:successMessage];
 //        
 //    } loginFailure:^(NSString *errorMessage) {
 //        //登录失败更新视图显示提示信息

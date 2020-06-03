@@ -9,6 +9,7 @@
 
 #import <Foundation/Foundation.h>
 #import <CJBaseUIKit/CJTextField.h>
+#import <MBProgressHUD/MBProgressHUD.h>
 
 @protocol LoginViewControlDelegate <NSObject>
 

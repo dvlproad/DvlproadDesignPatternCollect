@@ -7,7 +7,8 @@
 //
 
 #import "LoginViewControl.h"
-#import <CJBaseUIKit/CJToast.h>
+//#import <CQOverlayKit/CQToastUtil.h>
+#import <CQDemoKit/CJUIKitToastUtil.h>
 
 @interface LoginViewControl () {
     
@@ -146,13 +147,13 @@
 
 ///"尝试登录失败(未满足条件)时候"，更新视图
 - (void)tryLoginFailureWithMessage:(NSString *)message {
-    [CJToast shortShowMessage:message];
+    [CJUIKitToastUtil showMessage:message];
 }
 
 ///"开始登录时候"更新视图(如显示提示信息)
 - (void)startLoginWithMessage:(NSString *)message {
     if (_loginStateHUD == nil) {
-        _loginStateHUD = [CJToast createChrysanthemumHUDWithMessage:message toView:nil];
+//        _loginStateHUD = [CJToast createChrysanthemumHUDWithMessage:message toView:nil];
     } else {
         _loginStateHUD.label.text = message;
     }
@@ -161,7 +162,7 @@
 ///“登录成功进入/回到主页时候"更新视图
 - (void)loginSuccessWithMessage:(NSString *)message isBack:(BOOL)isBack {
     [self.loginStateHUD hideAnimated:YES afterDelay:0];
-    [CJToast shortShowMessage:message];
+    [CJUIKitToastUtil showMessage:message];
 }
 
 ///"登录失败时候"更新视图

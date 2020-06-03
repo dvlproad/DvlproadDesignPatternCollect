@@ -12,6 +12,9 @@
 #import <CJBaseUIKit/UIColor+CJHex.h>
 #import <CJBaseUtil/CJAppLastUtil.h>
 
+#import <CQOverlayKit/CQToastUtil.h>
+#import <CQOverlayKit/UIView+CQProgressHUD.h>
+
 @interface CommonLoginViewController : UIViewController {
     
 }

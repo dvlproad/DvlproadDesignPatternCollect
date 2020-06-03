@@ -8,8 +8,8 @@
 
 #import "CommonLoginViewController.h"
 #import <CJBaseUIKit/UINavigationBar+CJChangeBG.h>
-#import "DemoButtonFactory.h"
-#import "DemoTextFieldFactory.h"
+#import <CQThemeBaseUIKit/CQButtonFactory.h>
+#import <CQThemeBaseUIKit/CQTextFieldFactory.h>
 
 @interface CommonLoginViewController () <UITextFieldDelegate> {
     
@@ -218,7 +218,7 @@
     if (_userNameTextField == nil) {
         UIImage *normalImage = [UIImage imageNamed:@"login_username_gray"];
         UIImage *selectedImage = [UIImage imageNamed:@"login_username_blue"];
-        _userNameTextField = [DemoTextFieldFactory textFieldWithNormalImage:normalImage selectedImage:selectedImage];
+        _userNameTextField = [CQTextFieldFactory textFieldWithNormalImage:normalImage selectedImage:selectedImage];
         _userNameTextField.placeholder = NSLocalizedString(@"用户名", nil);
         _userNameTextField.returnKeyType = UIReturnKeyNext;
         _userNameTextField.clearButtonMode = UITextFieldViewModeWhileEditing;
@@ -231,7 +231,7 @@
     if (_passwordTextField == nil) {
         UIImage *normalImage = [UIImage imageNamed:@"login_password_gray"];
         UIImage *selectedImage = [UIImage imageNamed:@"login_password_blue"];
-        _passwordTextField = [DemoTextFieldFactory textFieldWithNormalImage:normalImage selectedImage:selectedImage];
+        _passwordTextField = [CQTextFieldFactory textFieldWithNormalImage:normalImage selectedImage:selectedImage];
         _passwordTextField.placeholder = NSLocalizedString(@"密码", nil);
         _passwordTextField.secureTextEntry = YES;
         _passwordTextField.returnKeyType = UIReturnKeyDone;
@@ -245,7 +245,7 @@
 
 - (UIButton *)loginButton {
     if (_loginButton == nil) {
-        _loginButton = [DemoButtonFactory blueButton];
+        _loginButton = [CQButtonFactory themeBGButton];
         [_loginButton setBackgroundColor:CJColorFromHexString(@"#66cc00")];
         [_loginButton setTitle:NSLocalizedString(@"登录", nil) forState:UIControlStateNormal];
         [_loginButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
