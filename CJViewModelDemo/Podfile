@@ -28,7 +28,7 @@ end
 
 target 'CJViewModelDemo' do
    pod 'CJBaseUtil',          :subspecs => ['CJDataUtil']
-   pod 'CJDemoCommon'
+#   pod 'CJDemoCommon'
    pod 'CJDemoService/User'#,  :path => '~/Project/Gitee/AppServiceCollect’
    pod 'CJDemoModuleLogin/Logic/NDM'#, :path => '~/Project/Gitee/AppLoginCollect’
    

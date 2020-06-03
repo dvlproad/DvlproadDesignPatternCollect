@@ -125,7 +125,7 @@ class _MyLoginPageState extends State<MyLoginBasePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Stack(
-        alignment: Alignment.center, //指定未定位或部分定位widget的对齐方式
+        alignment: Alignment.center,
         children: <Widget>[
           GestureDetector(
             behavior: HitTestBehavior.translucent,
@@ -199,8 +199,6 @@ class _MyLoginPageState extends State<MyLoginBasePage> {
         width: 113.0,
         height: 113.0);
   }
-
-
 
   /// 用户名文本框
   LoginTextField userNameTextField() {

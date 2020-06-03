@@ -33,7 +33,7 @@
 
 |                         | 未完整的双向绑定1                                            | 未完整的双向绑定2                                            | 完整的双向绑定                                               |
 | ----------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| 代码文本                | ![RACBindTextField1](./Screenshots/RAC/RACBindTextField1.png) | ![RACBindTextField2](./Screenshots/RAC/RACBindTextField2.png) | ![RACBindTextField3](./Screenshots/RAC/RACBindTextField3.png) |
+| 代码文本                | ![RACBindTextField1](你真的会用RAC吗/RACBindTextField1.png)  | ![RACBindTextField2](你真的会用RAC吗/RACBindTextField2.png)  | ![RACBindTextField3](你真的会用RAC吗/RACBindTextField3.png)  |
 | 代码截图                | ```// textField1: 键盘修改textField有问题的例子```<br/>```RACChannelTo(self.viewModel, text1) = RACChannelTo(self.textField1, text);``` | ```// textField2: 代码修改textField有问题的例子```<br/>```RACChannelTo(self.viewModel, text2) = self.textField2.rac_newTextChannel;``` | ```// textField3: 键盘和代码修改textField都没问题的例子```<br/>```RACChannelTo(self.viewModel, text3) = RACChannelTo(self.textField3, text);```<br/>```[self.textField3.rac_textSignal subscribe:RACChannelTo(self.textField3, text)];``` |
 | textField               | textField1: 键盘修改textField有问题的例子                    | textField2: 代码修改textField有问题的例子                    | textField3: 键盘和代码修改textField都没问题的例子            |
 | (通过代码)改变model时   | textField会改变                                              | textField会改变                                              | textField会改变                                              |
@@ -61,7 +61,7 @@
 
 我们在`RACKVOProxy`中的`observeValueForKeyPath`处设置断点，会发现，当我们只设置如上代码时候，通过键盘改变textField的值的时，其并未走入所设断点中，即其此时并未能检测到文本框的文本已经改变了。所以，也就出现了只设置如上代码，会出现当通过键盘改变文本框(键盘未收起)的时候，viewModel中的值没法改变的情况。
 
-> ![RACKVOProxy observeValueForKeyPath](./Screenshots/RAC/RACKVOProxy observeValueForKeyPath.png)
+> ![RACKVOProxy observeValueForKeyPath](你真的会用RAC吗/RACKVOProxy observeValueForKeyPath.png)
 
 同理，另一个的验证也如此。
 
@@ -191,7 +191,7 @@
 
 下面是一张别人的图：
 
-![img](./Screenshots/RAC/KVO机制.png)
+![img](你真的会用RAC吗/KVO机制.png)
 
 
 
@@ -248,3 +248,4 @@ iOS默认不支持KVO的形式来监听数组的变化，数组改变的时候�
 ## 五、结束语
 
 暂时到此！感谢查阅！
+
