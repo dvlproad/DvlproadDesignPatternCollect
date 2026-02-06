@@ -8,14 +8,16 @@
 ## 一、MVVM中的ViewModel设计
 
 这里我将主要采用`block`、`delegate`、`KVO`、`RAC`四种方式介绍ViewModel的设计。
-详情请查看：[CJViewModelDemo](./CJViewModelDemo)中[ViewModelDemos文件夹下的代码](./CJViewModelDemo/CJViewModelDemo/ViewModelDemos).
+详情请查看：[CJViewModelDemo](https://github.com/dvlproad/DvlproadDesignPatternCollect/blob/master/CJViewModelDemo) 中 [ViewModelDemos 文件夹下的代码](https://github.com/dvlproad/DvlproadDesignPatternCollect/tree/master/CJViewModelDemo/CJViewModelDemo/Module/ViewModelDemos)。
+
+
 
 
 
 ## 二、ViewModel设计中的监听坑(RAC、KVO)
 这里将主要介绍如果你使用RAC或者KVO设计ViewModel的时候，有哪些坑是你一定要注意的。
 
-详情请查看：[让你不知道怎么死的RAC.md](./让你不知道怎么死的RAC.md)
+详情请查看：[让你不知道怎么死的RAC.md](https://dvlproad.github.io/Architecture架构/架构相关/1架构细节/你真的会用RAC吗/)
 
 该部分也分别用代码验证了这些坑的存在，代码位置为[CJViewModelDemo](./CJViewModelDemo)中对应的部分。如：
 
